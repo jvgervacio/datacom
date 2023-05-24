@@ -24,8 +24,8 @@ class ImageClassifier:
 
         if len(categories) > 0:
             category = categories[0]
-
-            return category.category_name + " " + str(category.score)
+            print(category.category_name, category.score)
+            return category.category_name
         else:
             return None
 

@@ -32,7 +32,7 @@ CS = digitalio.DigitalInOut(board.D5)
 MCP = mcp3008.MCP3008(SPI, CS)
 SENSOR = analog_in.AnalogIn(MCP, mcp3008.P0)
 
-classifier = ImageClassifier("can_and_bottle_model.tflite", 0.85, 1)
+classifier = ImageClassifier("can_and_bottle_model_v2.tflite", 0.6, 1)
 cam = None
 
 # openjson file
